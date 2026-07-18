@@ -91,7 +91,7 @@ while True:
         print("score:", DeckBlackJack.score(user_scores))
 
         if DeckBlackJack.score(user_scores) > 21:
-            'you loose'
+            print('you loose')
             break
 
         choice = input("add / stop: ").lower()
@@ -99,6 +99,17 @@ while True:
         if choice == "add":
             user_scores.append(decks.deck.pop())
         elif choice == "stop":
+            if comp > 21 and user > 21:
+                print('play again ! equal ')
+
+            elif  user < comp <= 21 :
+                print('comp won')
+
+            elif comp < user <= 21 :
+                print('u won')
+
+            elif comp == user:
+                print('equal')
             break
     
     while DeckBlackJack.score(computer_scores) < 17:
@@ -120,6 +131,8 @@ while True:
 
     elif comp == user:
         print('equal')
+
+    
   
 
 
