@@ -79,7 +79,7 @@ class Hotel:
                 payment = customer.pay_for_booking(total_price)
 
 
-                if payment == "sucessfully paid":
+                if payment:
 
                     room.book_room()
 

@@ -35,7 +35,7 @@ class Customer:
         if self._budget < total_price:
             return 'budget is not enough'
         self._budget -= total_price
-        return 'sucessfully paid'
+        return True
     
     def show_booking_summary(self):
         info_summary = [f'served rooms are {i._room_number} and price {i._price_per_night}' for i in self._book_rooms]

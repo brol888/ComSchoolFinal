@@ -20,9 +20,8 @@ class TestHotelSystem(unittest.TestCase):
 
 
         # ამოწმებს გადახდა წარმატებულია თუ არა
-        self.assertEqual(
-            result,
-            "sucessfully paid"
+        self.assertTrue(
+            result
         )
 
 
