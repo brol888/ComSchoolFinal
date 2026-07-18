@@ -113,7 +113,6 @@ library1 = MiniLibrary(**books)
 while True:
     welcome = input('hello, please enter service Get book / Add Book \n for cancel write c')
 
-    print( MiniLibrary.cleaner(welcome))
     if MiniLibrary.cleaner(welcome) == 'getbook':
         while True:
             title = input(f'please choose book / for cancel type c : \n {library1} : ')
@@ -129,7 +128,7 @@ while True:
                 elif anothertry == 'n':
                     break
                 else:
-                    print('try again')
+                    print('try again : out of books')
                     break
 
             elif  MiniLibrary.cleaner(title) == 'c':

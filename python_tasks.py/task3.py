@@ -50,5 +50,3 @@ class ATMMachine:
 
 user1 = ATMMachine(5000)
 
-user1.withdraw(200)
-user1.deposit(10000)
